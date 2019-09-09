@@ -4,6 +4,7 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.print.PageFormat;
+import java.awt.print.Paper;
 import java.awt.print.Printable;
 import java.awt.print.PrinterException;
 
@@ -25,16 +26,18 @@ public class TextoPrintable implements Printable {
         if (pageIndex > 0 || texto == null) {
             return Printable.NO_SUCH_PAGE;
         }
+		
+		Paper paper = pageFormat.getPaper();
+		int origenX = (int) paper.getImageableX();
+		int origenY = (int) paper.getImageableY();
         
         graphics.setFont(new Font("Monospaced", Font.PLAIN, 12));
         
         FontMetrics metrics = graphics.getFontMetrics(graphics.getFont());
         int dy = metrics.getHeight();               
         
-        
-        
         String[] lineas = texto.split("\n");
-        int x = 0, y = dy;
+        int x = origenX, y = origenY + dy;
         for (String linea : lineas) {
         
             graphics.drawString(linea, x, y);

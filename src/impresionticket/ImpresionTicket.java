@@ -1,5 +1,7 @@
 package impresionticket;
 
+import java.awt.print.PageFormat;
+import java.awt.print.Paper;
 import java.awt.print.PrinterException;
 import java.awt.print.PrinterJob;
 import java.io.IOException;
@@ -40,35 +42,23 @@ public class ImpresionTicket {
     }
 
     public void imprimir(String texto) {
-        PrinterJob printerjob = PrinterJob.getPrinterJob();
-        //PageFormat format = printerjob.pageDialog(new PageFormat());
+        PrinterJob printerjob = PrinterJob.getPrinterJob();        
         printerjob.setJobName("ticket");
-        printerjob.setPrintable(new TextoPrintable(texto));
-
+				
         boolean ok = printerjob.printDialog();
         if (!ok) {
             return;
         }
+		
+		PageFormat pageFormat = printerjob.pageDialog(new PageFormat());
+		printerjob.setPrintable(new TextoPrintable(texto), pageFormat);
 
         try {
             printerjob.print();
 
-            //       printerjob.
-//        printerjob.setCopies(1);
-//        
-//        for (PrintService printService : PrinterJob.lookupPrintServices()) {
-//            System.out.println("check printer name of service " + printService);
-//            if (printerName.equals(printService.getName())) {
-//            System.out.println("correct printer service do print...");
-//            printerjob.setPrintService(printService);
-//            printerjob.print();
-//            break;
-//        }
-//    
         } catch (PrinterException ex) {
             ex.printStackTrace();
         }
-
     }
-
 }
+

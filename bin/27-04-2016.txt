@@ -1,0 +1,83 @@
+   DIARIO DE CAJA AL DIA 27/04/2016
+
+ TICKET N: 160001155     14,50
+ TICKET N: 160001156      4,40
+ TICKET N: 160001157     11,60
+                      ----------
+ TOTAL VENTAS            30,50
+
+EL CENTRO                               
+EL CENTRO                               
+C.I.F. 28.893.974 - V                   
+ROSALIA DE CASTRO N. 5                  
+41300 SAN JOSE DE LA RINCONADA          
+SEVILLA                                 
+Tfno 955791305                          
+Ticket: 160001155      Fecha: 27/04/2016
+Atendido por:                           
+MANUEL                                  
+en Barra                                
+========================================
+DESCRIPCION     UNIDADES  PRECIO IMPORTE
+========================================
+CAFE + ENT. YORK   2,000    2,50    5,00
+TOSTADA ENTERA     3,000    1,30    3,90
+1NFUSION           1,000    1,10    1,10
+CARAJILLO          3,000    1,50    4,50
+                         ---------------
+             TOTAL TICKET          14,50
+                          (IVA incluido)
+                  Entrega          14,50
+                Pendiente           0,00
+EFECTIVO                                
+GRACIAS POR SU VISITA                   
+
+EL CENTRO                               
+EL CENTRO                               
+C.I.F. 28.893.974 - V                   
+ROSALIA DE CASTRO N. 5                  
+41300 SAN JOSE DE LA RINCONADA          
+SEVILLA                                 
+Tfno 955791305                          
+Ticket: 160001156      Fecha: 27/04/2016
+Atendido por:                           
+MANUEL                                  
+en Barra                                
+========================================
+DESCRIPCION     UNIDADES  PRECIO IMPORTE
+========================================
+SALPICON DE MARI   1,000    2,00    2,00
+PASARRATOS         2,000    1,20    2,40
+                         ---------------
+             TOTAL TICKET           4,40
+                          (IVA incluido)
+                  Entrega           4,40
+                Pendiente           0,00
+EFECTIVO                                
+GRACIAS POR SU VISITA                   
+
+EL CENTRO                               
+EL CENTRO                               
+C.I.F. 28.893.974 - V                   
+ROSALIA DE CASTRO N. 5                  
+41300 SAN JOSE DE LA RINCONADA          
+SEVILLA                                 
+Tfno 955791305                          
+Ticket: 160001157      Fecha: 27/04/2016
+Atendido por:                           
+MANUEL                                  
+en Barra                                
+========================================
+DESCRIPCION     UNIDADES  PRECIO IMPORTE
+========================================
+DESCAF. MAQUINA    2,000    1,10    2,20
+HEINEKEN           3,000    2,00    6,00
+DESCAFEINADO       2,000    1,10    2,20
+ZUMO DE TOMATE     1,000    1,20    1,20
+                         ---------------
+             TOTAL TICKET          11,60
+                          (IVA incluido)
+                  Entrega          11,60
+                Pendiente           0,00
+EFECTIVO                                
+GRACIAS POR SU VISITA                   
