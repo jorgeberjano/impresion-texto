@@ -50,7 +50,13 @@ public class ImpresionTicket {
             return;
         }
 		
-		PageFormat pageFormat = printerjob.pageDialog(new PageFormat());
+		PageFormat pageFormat = printerjob.defaultPage(); //pageDialog(new PageFormat());
+		Paper paper = pageFormat.getPaper();
+		paper.setSize(612, 9269);
+		paper.setImageableArea(0, 0, 612, 9269);
+		
+		pageFormat.setPaper(paper);
+		pageFormat.setOrientation(PageFormat.PORTRAIT);
 		printerjob.setPrintable(new TextoPrintable(texto), pageFormat);
 
         try {
