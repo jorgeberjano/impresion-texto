@@ -1,5 +1,6 @@
 package impresionticket;
 
+import java.awt.print.Book;
 import java.awt.print.PageFormat;
 import java.awt.print.Paper;
 import java.awt.print.PrinterException;
@@ -9,6 +10,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
+import javax.print.attribute.PrintRequestAttributeSet;
 
 /**
  *
@@ -52,12 +54,14 @@ public class ImpresionTicket {
 		
 		PageFormat pageFormat = printerjob.defaultPage(); //pageDialog(new PageFormat());
 		Paper paper = pageFormat.getPaper();
-		paper.setSize(612, 9269);
-		paper.setImageableArea(0, 0, 612, 9269);
+		paper.setSize(300, 2100);
+		paper.setImageableArea(0, 0, 300, 2100);
 		
 		pageFormat.setPaper(paper);
 		pageFormat.setOrientation(PageFormat.PORTRAIT);
 		printerjob.setPrintable(new TextoPrintable(texto), pageFormat);
+		Book book = new Book();
+		printerjob.setPageable(book);
 
         try {
             printerjob.print();

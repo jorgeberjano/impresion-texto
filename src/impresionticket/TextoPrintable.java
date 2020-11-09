@@ -30,6 +30,9 @@ public class TextoPrintable implements Printable {
 		Paper paper = pageFormat.getPaper();
 		int origenX = (int) paper.getImageableX();
 		int origenY = (int) paper.getImageableY();
+		
+		double width = pageFormat.getImageableWidth();
+		double height = pageFormat.getImageableHeight();
         
         graphics.setFont(new Font("Monospaced", Font.PLAIN, 12));
         
